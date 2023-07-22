@@ -3,6 +3,11 @@ from rest_framework import generics
 from .models import Book
 from rest_framework.response import Response 
 from .serializers import BookSerializer
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Pastebin API')
+
+
 
 class BookListCreateView(generics.ListCreateAPIView):
     queryset = Book.objects.all()
