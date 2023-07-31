@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_swagger',
     'books',
-    'drf-yasg',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
